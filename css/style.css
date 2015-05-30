@@ -1,0 +1,32 @@
+#banner {
+	background-color: #000;
+	width: 95%;
+	position: fixed;
+	top: 0em;
+	left: 0em;
+	box-shadow: 0em .3em .3em #888888;
+}
+
+#banner h1 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	letter-spacing: .1em;
+	color: #FFF;
+	margin: 1em .3em .1em .3em;
+}
+
+#content {
+	background-color: #DDD;
+	margin: 5em -.5em 0em 5em;
+	padding: 0em 1em;
+}
+
+/*
+#circle {
+	background-color: #59E;
+	width: 5em;
+	height: 5em;
+	border-radius: 100%;
+	margin: 20em auto 0em auto;
+}
+*/
