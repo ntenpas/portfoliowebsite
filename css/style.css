@@ -2,14 +2,6 @@ html {
 	font-size: 1.3em;
 }
 
-/*
-@media (max-width: 60em) {
-	html {
-		font-size: 1.5em;
-	}
-}
-*/
-
 body {
 	background-color: #F0F0F0;
 }
@@ -31,6 +23,26 @@ body {
 	letter-spacing: .4rem;
 	color: #FFF;
 	margin: 1.5rem 0rem 0rem 2rem;
+}
+
+#nav {
+	/*background-color: #00FF00;*/
+	width: 40%;
+	height: 4.5rem;
+	position: fixed;
+	top: 0rem;
+	right: 0rem;
+	/*box-shadow: 0rem .3rem .5rem #888888;*/
+	text-align: center;
+}
+
+#nav .tab {
+	display: inline-block;
+	background-color: #FFFFFF;
+	height: 100%;
+	width: 30%;
+	max-width: 5rem;
+	box-shadow: 0rem .3rem .5rem #888888;
 }
 
 #page {
@@ -72,12 +84,23 @@ body {
 	}
 }
 
-@media (max-width: 60em) {
-	/*
+@media (max-width: 50em) {
 	#content {
-		max-width: 40rem;
+		max-width: 28rem;
 		margin-left: auto;
 		margin-right: auto;
 	}
-	*/
+}
+
+@media (max-width: 41em) {
+	#content {
+		margin-left: 1.4rem;
+		margin-right: 1.4rem;
+	}
+}
+
+@media (max-width: 38em) {
+	#banner h1 {
+		font-size: 1.5rem;
+	}
 }
