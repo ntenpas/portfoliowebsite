@@ -89,22 +89,11 @@ body {
 #blogTab:hover p {
 	color: #000;
 }
-#blogTab:active p {
-	/*color: #FFF;*/
-}
-
 #resumeTab:hover p {
 	color: #000;
 }
-#resumeTab:active p {
-	/*color: #FFF;*/
-}
-
 #aboutTab:hover p {
 	color: #000;
-}
-#aboutTab:active p {
-	/*color: #FFF;*/
 }
 
 #page {
@@ -142,7 +131,20 @@ body {
 }
 
 .patty {
-	background-color: #222;
+	height: .3rem;
+	width: 70%;
+	margin: .8rem auto;
+	border-radius: 1rem;
+}
+
+#topPatty {
+	background-color: #33CC33;
+}
+#middlePatty {
+	background-color: #0099FF;
+}
+#bottomPatty {
+	background-color: #FF3300;
 }
 
 @media (max-width: 70em) {
@@ -176,7 +178,7 @@ body {
 
 @media (max-width: 45em) {
 	#banner h1 {
-		margin-top: 2rem;
+		margin-top: 1.5rem;
 		font-size: 1.5rem;
 	}
 }
@@ -190,9 +192,19 @@ body {
 
 @media (max-width: 40em) {
 	#nav {
-		display: none;
+		position: fixed;
+		display: block;
+		left: 0rem;
+		top: 4rem;
+		width: 101%;
+		height: 2rem;
 	}
+	.tab p {
+		margin-top: .6rem;
+	}
+	/*
 	#hamburger {
 		display: block;
 	}
+	*/
 }
