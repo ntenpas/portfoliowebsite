@@ -132,7 +132,17 @@ body {
 }
 
 #hamburger {
+	background-color: #222;
+	width: 15%;
+	height: 4rem;
+	position: fixed;
+	top: 0rem;
+	right: 0rem;
 	display: none;
+}
+
+.patty {
+	background-color: #222;
 }
 
 @media (max-width: 70em) {
@@ -181,5 +191,8 @@ body {
 @media (max-width: 40em) {
 	#nav {
 		display: none;
+	}
+	#hamburger {
+		display: block;
 	}
 }
