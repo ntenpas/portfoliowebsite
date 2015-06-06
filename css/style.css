@@ -38,6 +38,7 @@ body {
 	float: left;
 	width: 6rem;
 	height: 100%;
+	text-decoration: none;
 }
 
 .stripe {
