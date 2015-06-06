@@ -129,6 +129,12 @@ body {
 	right: 0rem;
 	display: none;
 }
+#hamburger:hover {
+	background-color: #555;
+}
+#hamburger:active {
+	box-shadow: inset 0rem 0rem .5rem;
+}
 
 .patty {
 	height: .3rem;
@@ -193,7 +199,6 @@ body {
 @media (max-width: 40em) {
 	#nav {
 		position: fixed;
-		display: block;
 		left: 0rem;
 		top: 4rem;
 		width: 101%;
@@ -202,9 +207,4 @@ body {
 	.tab p {
 		margin-top: .6rem;
 	}
-	/*
-	#hamburger {
-		display: block;
-	}
-	*/
 }
