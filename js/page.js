@@ -14,7 +14,7 @@ var checkSmallScreen = function() {
 	}
 }
 var checkLargeScreen = function() {
-	if (window.innerWidth > window.innerHeight) {
+	if (window.innerWidth >= window.innerHeight) {
 		nav.style.visibility = 'visible';
 		hamburger.style.display = 'none';
 	}
@@ -55,13 +55,6 @@ window.addEventListener('resize', function(event) {
 	checkLargeScreen();
 	checkSmallScreen();
 });
-
-// account for device rotations
-//window.screen.addEventListener('orientationchange', function(event) {
-	//alert('change!');
-	//checkSmallScreen();
-	//checkLargeScreen();
-//});
 
 // on hamburger menu click, display nav
 hamburger.addEventListener('click', function(event) {
