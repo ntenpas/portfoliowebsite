@@ -71,6 +71,7 @@ hamburger.addEventListener('click', function(event) {
 });
 
 // asynchronous page loads
+/*
 blogTab.addEventListener('click', function(event) {
 	getContent(event, 'index');
 });
@@ -80,3 +81,4 @@ resumeTab.addEventListener('click', function(event) {
 aboutTab.addEventListener('click', function(event) {
 	getContent(event, 'about');
 });
+*/
