@@ -35,7 +35,38 @@
 				<section class='blogPost'>
 					<h2>Serving Static Files With NodeJS</h2>
 					<p>
-						Working on it right now...
+						Install NodeJS, and install via NPM 'http-server'.
+						Forward port 80 on your router, and if you have a domain
+						name, make sure it is mapped correctly to your server's
+						IP. Also, to run http-server in the background, install
+						tmux.
+						<br />
+						Open xterm or any shell window on your server and type:
+						<section class='code'>
+							$ cd <span class='placeholder'>folder</span>
+						</section>
+						to change your current directory to the folder of the
+						website.
+						<br />
+						Next, type:
+						<section class='code'>
+							$ tmux
+						</section>
+						to open a new terminal window.
+						<br />
+						Next, type:
+						<section class='code'>
+							$ sudo http-server -a <span class='placeholder'>address</span> -p <span class='placeholder'>port</span>
+						</section>
+						to run the http-server.
+						<br />
+						Finally, hit ctrl-b, d to background and detach tmux.
+						<br />
+						To shut down the server:
+						<section class='code'>
+							$ tmux a
+						</section>
+						and type 'exit'.
 					</p>
 				</section>
 			</section>

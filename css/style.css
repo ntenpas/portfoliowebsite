@@ -162,6 +162,17 @@ nav {
 	padding: 1rem;
 	box-shadow: 0rem 0rem .3rem #888;
 }
+.code {
+	background-color: #000;
+	color: white;
+	padding: 1rem;
+	margin: 1rem;
+	font-family: monospace;
+}
+.placeholder {
+	font-style: italic;
+	color: #5FF;
+}
 
 
 #hamburger {
