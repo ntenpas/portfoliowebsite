@@ -1,11 +1,18 @@
 var hamburger = document.getElementById('hamburger');
-var nav = document.getElementById('nav');
+var nav = document.getElementsByTagName('nav')[0];
 var blogTab = document.getElementById('blogTab');
 var resumeTab = document.getElementById('resumeTab');
 var aboutTab = document.getElementById('aboutTab');
-var html = document.getElementById('html');
+var html = document.getElementsByTagName('html')[0];
+var footerYear = document.getElementById('currentYear');
 var baseFontSize = window.getComputedStyle(html, null)['font-size'];
 var remSize = parseFloat(baseFontSize);
+
+var setCurrentYear = function() {
+	year = new Date().getFullYear();
+	yearText = document.createTextNode(year);
+	footerYear.appendChild(yearText);
+}
 
 var checkSmallScreen = function() {
 	if (nav.clientHeight == Math.round(2*remSize)) {
@@ -69,6 +76,9 @@ hamburger.addEventListener('click', function(event) {
 		nav.style.visibility = 'hidden';
 	}
 });
+
+// set the current year
+setCurrentYear();
 
 // asynchronous page loads
 /*

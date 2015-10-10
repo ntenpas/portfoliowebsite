@@ -1,38 +1,47 @@
 html {
-	font-size: 1.3em;
+	font-size: 1em;
 }
-
 body {
 	background-color: #F0F0F0;
 }
+footer {
+	margin-top: 3rem;
+	text-align: center;
+}
+footer img {
+	height: 2rem;
+}
+footer p {
+	font-size: 0.8rem;
+	color: #888;
+}
 
-#banner {
-	background-color: #000000;
+
+header {
+	background-color: #000;
 	width: 100%;
 	height: 4rem;
 	position: fixed;
 	top: 0rem;
 	left: 0rem;
-	box-shadow: 0rem .3rem .5rem #888888;
+	box-shadow: 0rem .3rem .5rem #888;
 }
-
-#banner h1 {
+header h1 {
 	font-family: sans-serif;
 	font-weight: 100;
-	font-size: 2rem;
 	letter-spacing: .4rem;
+	font-size: 2rem;
+	margin-top: 1.5rem;
+	margin-left: 2rem;
 	color: #FFF;
-	margin: 1.5rem 0rem 0rem 2rem;
 }
-
-#nav {
+nav {
 	width: 40%;
 	height: 4rem;
 	position: fixed;
 	top: 0rem;
 	right: 0rem;
 }
-
 .tab {
 	background-color: #222;
 	float: left;
@@ -40,13 +49,11 @@ body {
 	height: 100%;
 	text-decoration: none;
 }
-
 .stripe {
 	float: left;
 	width: .2rem;
 	height: 100%;
 }
-
 #blogStripe {
 	background-color: #33CC33;
 }
@@ -57,7 +64,6 @@ body {
 	background-color: #55EE55;
 	box-shadow: inset .1rem 0rem .5rem;
 }
-
 #resumeStripe {
 	background-color: #0099FF;
 }
@@ -68,7 +74,6 @@ body {
 	background-color: #22BBFF;
 	box-shadow: inset .1rem 0rem .5rem;
 }
-
 #aboutStripe {
 	background-color: #FF3300;
 }
@@ -79,14 +84,12 @@ body {
 	background-color: #FF5522;
 	box-shadow: inset .1rem 0rem .5rem;
 }
-
 .tab p {
 	font-family: sans-serif;
 	font-weight: 100;
 	color: #FFF;
 	margin-top: 2rem;
 }
-
 #blogTab:hover p {
 	color: #000;
 }
@@ -97,34 +100,69 @@ body {
 	color: #000;
 }
 
+
 #page {
 	background-color: #FFF;
 	margin: 4rem auto 1rem;
-	max-width: 50rem;
-	box-shadow: 0rem 0rem .3rem #888888;
+	max-width: 55rem;
+	box-shadow: 0rem 0rem .3rem #888;
+}
+#page h4 {
+	padding-top: 2.5rem;
+	font-weight: 500;
+	color: #888;
+	font-family: sans-serif;
+}
+#aboutTick {
+	color: #FF3300;
+}
+#blogTick {
+	color: #33CC33;
+}
+#resumeTick {
+	color: #0099FF;
 }
 
 #content {
-	margin-left: 5rem;
-	margin-right: 5rem;
-	padding-top: 3rem;
+	margin: auto;
+	max-width: 45rem;
 }
-
 #content h1 {
 	font-weight: 500;
 	font-family: sans-serif;
 }
-
 #content h2 {
 	font-weight: 100;
 	font-family: sans-serif;
 	color: #555;
 }
-
 #content p {
 	font-family: serif;
 	line-height: 2;
 }
+#content ul {
+	padding-left: 1.8rem;
+	line-height: 2;
+}
+#content > ul > li {
+	font-weight: 600;
+}
+#meImg {
+	width: 100%;
+	max-width: 20rem;
+	margin-right: 2rem;
+	border-radius: 2%;
+	float: left;
+}
+
+
+.blogPost {
+	background-color: #EEE;
+	border-radius: 2%;
+	padding: 1rem;
+	box-shadow: 0rem 0rem .3rem #888;
+}
+
 
 #hamburger {
 	background-color: #222;
@@ -133,6 +171,7 @@ body {
 	position: fixed;
 	top: 0rem;
 	right: 0rem;
+	min-width: 3rem;
 	display: none;
 }
 #hamburger:hover {
@@ -141,14 +180,12 @@ body {
 #hamburger:active {
 	box-shadow: inset 0rem 0rem .5rem;
 }
-
 .patty {
 	height: .3rem;
 	width: 70%;
 	margin: .8rem auto;
 	border-radius: 1rem;
 }
-
 #topPatty {
 	background-color: #33CC33;
 }
@@ -159,65 +196,19 @@ body {
 	background-color: #FF3300;
 }
 
-@media (max-width: 70em) {
-	#page {
-		margin-left: 1.5rem;
-		margin-right: 1.5rem;
-	}
-}
-
-@media (max-width: 65em) {
-	#page {
-		max-width: 46rem;
-		margin-left: auto;
-		margin-right: auto;
-	}
-}
-
-@media (max-width: 60em) {
-	.tab {
-		width: 33%;
-	}
-	#banner h1 {
-		font-size: 1.9rem;
-	}
-}
 
 @media (max-width: 50em) {
 	#content {
-		max-width: 28rem;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	#banner h1 {
-		font-size: 1.8rem;
-		margin-left: 1.8rem;
+		margin: auto 2rem;
 	}
 }
-
-@media (max-width: 46em) {
-	#banner h1 {
-		font-size: 1.6rem;
-		margin-left: 1.6rem;
+@media (max-width: 45em) {
+	.tab {
+		width: 33.33%;
 	}
 }
-
-@media (max-width: 42em) {
-	#banner h1 {
-		font-size: 1.4rem;
-		margin-left: 1.4rem;
-	}
-}
-
-@media (max-width: 41em) {
-	#content {
-		margin-left: 1.4rem;
-		margin-right: 1.4rem;
-	}
-}
-
 @media (max-width: 40em) {
-	#nav {
+	nav {
 		position: fixed;
 		left: 0rem;
 		top: 4rem;
@@ -227,14 +218,34 @@ body {
 	.tab p {
 		margin-top: .6rem;
 	}
-	#banner h1 {
-		margin-left: 1.2rem;
+}
+@media (max-width: 26em) {
+	#content {
+		margin: auto;
+		max-width: 21rem;
 	}
 }
-
-@media (max-width: 30em) {
-	#banner h1 {
-		font-size: 1.2rem;
-		margin-left: 1rem;
+@media (max-width: 24em) {
+	#content {
+		margin: auto 1rem;
+	}
+	header h1 {
+		font-size: 1.8rem;
+		margin-left: 1.6rem;
+		margin-top: 1rem;
+	}
+}
+@media (max-width: 22em) {
+	header h1 {
+		font-size: 1.6rem;
+		margin-left: 1.2rem;
+		margin-top: .5rem;
+		margin-right: 4rem;
+	}
+}
+@media (max-width: 20em) {
+	#content {
+		margin: auto;
+		max-width: 17rem;
 	}
 }

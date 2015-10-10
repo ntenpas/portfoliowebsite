@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html id='html'>
+<html>
 	<head>
-		<meta name='viewport' content='width=device-width, initial-scale=.6'>
-		<meta charset='utf-8'
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<meta charset='utf-8'>
 		<title>Nolan Tenpas</title>
 		<link rel='stylesheet' type='text/css' href='./css/style.css' />
 	</head>
 	<body>
-		<div id='banner'>
+		<header>
 			<h1>Nolan Tenpas</h1>
-		</div>
-		<div id='nav'>
+		</header>
+		<nav>
 			<a class='tab' id='blogTab' href='index.html'>
 				<div class='stripe' id='blogStripe'></div>
 				<p>Blog</p>
@@ -23,18 +23,38 @@
 				<div class='stripe' id='aboutStripe'></div>
 				<p>About</p>
 			</a>
-		</div>
+		</nav>
 		<a id='hamburger'>
 			<div class='patty' id='topPatty'></div>
 			<div class='patty' id='middlePatty'></div>
 			<div class='patty' id='bottomPatty'></div>
 		</a>
-		<div id='page'>
-			<div id='content'>
-				<h1>About</h1>
-				<img src='img/self.jpg' alt="An image of Nolan Tenpas' face." />
-			</div>
-		</div>
+		<section id='page'>
+		<h4><span id='aboutTick'>></span> About</h4>
+			<section id='content'>
+				<img id='meImg' src='img/self.png' alt="An image of Nolan Tenpas' face." />
+				<p>
+					Passionate&nbsp;about programming and computer hardware design, 
+					I am currently a Junior studying Computer Engineering and
+					Computer Science at UW-Madison. Relating to my field
+					of study, my hobbies include full-stack web development, iOS
+					and Android application development, high-level and low-level
+					programming, and keeping up to date with emerging technologies
+					of our time. Apart from computers, I enjoy spending my time
+					with family and friends, enjoying nature, running, fishing,
+					and riding my bike.
+				</p>
+			</section>
+			<footer>
+				<a href='https://github.com/ntenpasdeveloper' target='_blank'>
+					<img id='githubImg' src='img/github.png' alt='Check me out on github' />
+				</a>
+				<a href='https://www.linkedin.com/pub/nolan-tenpas/64/168/769' target='_blank'>
+					<img id='linkedinImg' src='img/linkedin.png' alt='Check me out on linkedIn' />
+				</a>
+				<p>&copy;<span id="currentYear"></span> Nolan Tenpas</p>
+			</footer>
+		</section>
 		<script src='js/page.js'></script>
 	</body>
 </html>
